@@ -33,6 +33,10 @@ pipeline {
     post {
         always {
             archiveArtifacts(artifacts: 'allure-report/**')
+            allure([
+                reportBuildPolicy: 'ALWAYS',
+                results: [[ path: 'allure-results' ]]
+            ])
         }
     }
 }
