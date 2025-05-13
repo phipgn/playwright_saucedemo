@@ -22,7 +22,7 @@ pipeline {
                 '''
             }
         }
-        state('generate allure report') {
+        stage('generate allure report') {
             steps {
                 bat '''
                     npm run allureReport
