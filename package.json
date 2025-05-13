@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --trace on",
-    "report": "npx playwright show-report"
+    "report": "npx playwright show-report",
+    "allureReport": "npx allure generate ./allure-results --clean && npx allure open"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,9 @@
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.52.0",
-    "@types/node": "^22.15.2"
+    "@types/node": "^22.15.2",
+    "allure-commandline": "^2.34.0",
+    "allure-js-commons": "^3.2.2",
+    "allure-playwright": "^3.2.2"
   }
 }
