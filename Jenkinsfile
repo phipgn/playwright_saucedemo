@@ -25,7 +25,7 @@ pipeline {
         stage('generate allure report') {
             steps {
                 bat '''
-                    npm run allureReport
+                    npm run makeAllureReport
                 '''
             }
         }

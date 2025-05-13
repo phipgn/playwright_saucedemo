@@ -5,7 +5,8 @@
   "scripts": {
     "test": "npx playwright test --trace on",
     "report": "npx playwright show-report",
-    "allureReport": "npx allure generate ./allure-results --clean && npx allure open"
+    "allureReport": "npx allure generate ./allure-results --clean && npx allure open",
+    "makeAllureReport": "npx allure generate ./allure-results --clean"
   },
   "keywords": [],
   "author": "",
