@@ -22,5 +22,17 @@ pipeline {
                 '''
             }
         }
+        state('generate allure report') {
+            steps {
+                bat '''
+                    npm run allureReport
+                '''
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts(artifacts: 'allure-report/**')
+        }
     }
 }
